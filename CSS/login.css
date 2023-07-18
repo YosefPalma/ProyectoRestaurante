@@ -7,8 +7,11 @@
 body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    height: 97vh;
+    height: 100vh;
     background: #001AA0; 
+    position: fixed;
+    gap: 25px;
+    margin-top: 0;
 }
 
 .log-in{
@@ -97,6 +100,10 @@ body{
   height: 28px;
 }
 
+.secciones{
+  margin-top: 25px;
+}
+
 .text-info-input{
   margin: 0;
 }
@@ -121,15 +128,50 @@ body{
 
 /********** lines bg  **********/
 .bg_lines{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  background-color: #FFF;
-  border-radius:25px 25px 0px 0px;
+  width: 100%;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: row;
+  transform: rotate(180deg);
+  justify-content: space-around;
 }
 
-.bg_lines:first-child{
+.line, .line_right{
+  background: #FFF;
+  border-radius: 0px 0px 25px 25px;
   width: 25px;
+}
+
+/* Lado derecho */
+.line:nth-child(5){
+  height: 384px;
+}
+
+.line:nth-child(4){
+  height: 694px;
+}
+
+.line:nth-child(3){
+  height: 308px;
+
+}
+
+.line:first-child{
+  height: 384px;
+}
+
+/* Lado izquierdo */
+.line_right:nth-child(5){
+  height: 384px;
+}
+
+.line_right:nth-child(3){
+  height: 308px;
+}
+
+.line_right:nth-child(2){
+  height: 694px;
+}
+
+.line_right:first-child{
   height: 384px;
 }

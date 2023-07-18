@@ -1,4 +1,16 @@
+
 *{
     font-family: 'Poppins', sans-serif;
 }
-
+body{
+    /* background: #CFFCF9; */
+    height: 1802px;
+    margin: 0px;
+}
+.topvar{
+    
+    
+}
+:root{
+    --primary: #7cb342;
+    }

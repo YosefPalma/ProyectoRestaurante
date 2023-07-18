@@ -4,23 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RenderBay</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
-    <link rel="stylesheet" href="./CSS/style.css">
-    
+    <link rel="stylesheet" href="CSS\custom.css">   
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <nav >
-        <div class="grid">
-            <img width="50px" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn.onlinewebfonts.com%2Fsvg%2Fimg_476916.png&f=1&nofb=1&ipt=a3cf83ed11d9e22355ece68df27be52aeec31552ea24d79f0e5b0b3086edca76&ipo=images" alt="Logo">
-            <p>RenderBay</p>
+    <nav class="navbar navbar-expand-sm navbar-dark shadow-lg navbar p-3" style="background-color: #2f00ff">
+        <a class="navbar-brand" href="#">RenderBay</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#" aria-current="page">Inicio<span class="visually-hidden">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Explorar</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="#">Action 1</a>
+                        <a class="dropdown-item" href="#">Action 2</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="d-flex my-2 my-lg-0">
+                <input class="form-control me-sm-2" type="text" placeholder="...">
+                <button class="btn btn-outline-success bg-danger my-2 my-sm-0 text-black" type="submit">Buscar</button>
+            </form>
         </div>
     </nav>
 
-    <div class="container">
-        <p>Hola mundo</p>
+
+    <div class="container bg-dark-subtle border border-dark rounded text-center mt-3">
+        <h3>!Bienvenido a RenderBay!</h3>
+        <small class="text-muted">Imprimiendo comunidades</small>
+
     </div>
-    <article>
-        <p>Hola</p>
-    </article>
 </body>
 </html>

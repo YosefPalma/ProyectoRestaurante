@@ -1,0 +1,11 @@
+.navbar-default > .container-fluid {   
+    display: flex;
+    justify-content: center;
+}
+*{
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+}
+body{
+    background-image: url("../img/robot.png");
+}
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

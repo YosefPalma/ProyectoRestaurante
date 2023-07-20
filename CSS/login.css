@@ -10,8 +10,8 @@ body{
     height: 100vh;
     background: #001AA0; 
     position: fixed;
-    gap: 25px;
     margin-top: 0;
+    gap: 54px;
 }
 
 .log-in{
@@ -69,7 +69,7 @@ body{
   padding-top: 25px;
 }
 
-.x{
+.x,.return_log_in{
   position: relative;
   color: #ffffff00;
   background: none;
@@ -119,7 +119,7 @@ body{
   margin: 0;
 }
 
-.click_here{
+.create_acount,.remember_password{
   color: #00FF0A;
 }
 
@@ -127,10 +127,12 @@ body{
   text-align: center;
 }
 
-.button_login{
+.button_login,.button_sing_up{
   padding-left: 25px;
   padding-right: 25px;
   color: #FFF;
+  font-weight: bolder;
+  font-size: large;
   background: #00FF0A;
   border: 5px solid #1DD300;
   border-radius: 15px;
@@ -144,12 +146,14 @@ body{
   flex-direction: row;
   transform: rotate(180deg);
   justify-content: space-around;
+  padding: 0, 15px, 0 15px;
 }
+
 
 .line_left, .line_right{
   background: #FFF;
   border-radius: 0px 0px 25px 25px;
-  width: 25px;
+  width: 30px;
 }
 
 /* Lado derecho */
@@ -185,4 +189,34 @@ body{
 
 .line_right:first-child{
   height: 384px;
+}
+
+/*****  Ventanas modal  *****/
+
+/* Create account */
+dialog{
+  border: none;
+  border-radius: 25px;
+  width: 55vh;
+  outline: none;
+}
+
+.sing-up{
+  background: #FFF;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+}
+
+dialog::backdrop{
+  background: rgba(38, 38, 38, 0.5);
+}
+
+.buttom_create{
+  display: grid;
+  place-items: center;
+
+  margin-top: 25px;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }

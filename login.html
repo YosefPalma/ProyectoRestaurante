@@ -19,12 +19,13 @@
        <span class="line_left"></span>
        <span class="line_left"></span>
        <span class="line_left"></span>
+       
     </div>
 
     <!-- Inicia formulario -->
         <form class="log-in">
            <div class="arriba">
-                <h1 class="log-in-tittle">Log-in</h1>
+                <h1 class="">Log-in</h1>
                 <div class="container-retroceder">
                     <div class="retroceder">
                         <span class="diagonal-45"></span>
@@ -52,11 +53,11 @@
 
             <div class="textos">
                 <p class="crear_cuenta">
-                    Do you need an account?To have a <a href="#"  class="click_here">Click here</a>
+                    Do you need an account?To have a <a href="#"  id="modal-open" class="create_acount" onclick="modal_open_create_account(this)" >Click here</a>
                 </p>
     
                 <p class="crear_cuenta">
-                    Forgot your password?To remind you <a href="#"  class="click_here">Click here</a>
+                    Forgot your password?To remind you <a href="#"  class="remember_password">Click here</a>
                 </p>
 
                 <button type="submit" class="button_login">Log in</button>
@@ -72,6 +73,47 @@
         <span class="line_right"></span>
         <span class="line_right"></span>
      </div>
+
+     <!-- Ventana modal de crear cuenta -->
+     <dialog id="modal_sing_up">
+        <div class="sing-up">
+            <form id="create_account">
+                <div class="arriba">
+                    <h1 class="log-in-tittle">Create account</h1>
+
+                    <div class="container-retroceder">
+                        <div class="retroceder">
+                            <span class="diagonal-45"></span>
+                            <a href="#" id="modal-close" class="return_log_in" onclick="modal_close_create_account(this)">X</a>
+                            <span class="diagonal45"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulario para crear cuenta -->
+                <div class="secciones">
+                    <p class="text-info-input">Username</p>
+                    <input type="text" class="input-login">
+                </div>
+    
+                <div class="secciones">
+                    <p class="text-info-input">Email</p>
+                    
+                    <input type="email" class="input-login">
+                </div>
+
+                <div class="secciones">
+                    <p class="text-info-input">Password</p>
+                    <input type="password" class="input-login">
+                </div>
+
+                <div class="buttom_create">
+                    <button type="submit" class="button_sing_up" onclick="modal_close_create_account(this)">Sign-Up</button>
+                </div>
+                <!-- Por le momento solo cierra la ventana modal, luego are que salgan mensajes que la cuenta se creo -->
+            </form>
+        </div>        
+     </dialog>
 
      <script src="js/log_in_modales.js"></script>
  </body>

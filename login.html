@@ -57,7 +57,7 @@
                 </p>
     
                 <p class="crear_cuenta">
-                    Forgot your password?To remind you <a href="#"  class="remember_password">Click here</a>
+                    Forgot your password?To remind you <a href="#"  class="remember_password" onclick="modal_open_remember_password(this)">Click here</a>
                 </p>
 
                 <button type="submit" class="button_login">Log in</button>
@@ -113,6 +113,32 @@
                 <!-- Por le momento solo cierra la ventana modal, luego are que salgan mensajes que la cuenta se creo -->
             </form>
         </div>        
+     </dialog>
+
+     <!-- Ventana modal para recordar contraseña -->
+     <dialog id="modal_password">
+        <div class="remember_password">
+            <form action="" id="recordar_contraseña">
+                <div class="arriba2">
+                    <h1 class="Forget-tittle">Forget your password?</h1>
+                    <div class="container-retroceder">
+                        <div class="retroceder">
+                            <span class="diagonal-45"></span>
+                            <a href="#" class="return_log_in" onclick="modal_close_password(this)">X</a>
+                            <span class="diagonal45"></span>
+                        </div>
+                    </div>
+                </div>
+                <p class="indicaciones_password">Write your email for see your password</p>
+                <div class="form-div-password">
+                    <input type="email" id="email" class="input-email-password">
+                    <button type="submit" class="buttom_remember_password" onclick="modal_close_password(this)">Submit</button>
+                </div>
+
+                <p class="see_password">a</p>
+                <!-- Crear despues una función que muestre la contraseña -->
+            </form>
+        </div>
      </dialog>
 
      <script src="js/log_in_modales.js"></script>

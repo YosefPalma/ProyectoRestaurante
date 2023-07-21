@@ -12,3 +12,10 @@ let modal_close_create_account=()=>{
 // Crear función de aviso de que se creo una cuenta
 
 /* Ventana modal para recordar contraseña */
+let modal_open_remember_password=()=>{
+    modal_password.showModal();
+}
+
+let modal_close_password=()=>{
+    modal_password.close();
+}

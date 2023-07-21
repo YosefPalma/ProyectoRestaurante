@@ -2,6 +2,7 @@
 
 *{
     font-family: 'Poppins', sans-serif;
+    color: #000;
 }
 
 body{
@@ -215,8 +216,66 @@ dialog::backdrop{
 .buttom_create{
   display: grid;
   place-items: center;
-
   margin-top: 25px;
   margin-bottom: 0;
   padding-bottom: 0;
+}
+
+/* Recordar contraseña */
+.Forget-tittle{
+  background: #000;
+  color: #FFF;
+  border-radius: 15px;
+  padding: 0px 10px 0px 10px;
+}
+
+.input-email-password{
+  background: #D9D9D9;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 28px;
+}
+
+.form-div-password{
+  display: flex;
+  gap: 20px;
+}
+
+#modal_password{
+  width: 64vh;
+}
+
+.arriba2{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  flex-direction: column-reverse;
+  align-items:last baseline;
+}
+
+.indicaciones_password{
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.container-retroceder:nth-child(2){
+  display: grid;
+  place-items: center;
+  margin-bottom: 20px;
+}
+
+.see_password{
+  color: transparent;
+}
+
+.buttom_remember_password{
+  color: #FFF;
+  background: #000;
+  border-radius: 25px;
+  border: none;
+  font-weight: bolder;
+  font-size: large;
+  width: 50%;
+  cursor: pointer;
 }

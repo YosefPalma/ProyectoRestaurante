@@ -6,13 +6,13 @@
 }
 
 body{
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     height: 100vh;
     background: #001AA0; 
     position: fixed;
     margin-top: 0;
-    gap: 54px;
 }
 
 .log-in{
@@ -23,54 +23,57 @@ body{
 }
 
 .arriba{
-    display: flex;
-    flex-direction: column-reverse;
-    flex-wrap: wrap-reverse;
-    text-align: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    position: relative;
+    left: 45px;
 }
 
 /****** Retroceder*****/
-.container-retroceder{
-  width: 30px;
-  height: 30px;
+.container_retroceder{
   border-radius: 15px;
-  position: absolute;
-  padding-top: 15px;
 }
 
-.retroceder{
-  width: 30px;
-  height: 30px;
+.retroceder {
   border: 5px solid #BDBDBD;
   border-radius: 10px;
-  position: absolute;
-  margin-left: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  position: relative;
 }
 
-.diagonal-45, .diagonal45 {
-  position: absolute;
-  width: 25px;
-  height: 5px;
+.x-line {
+  width: 6px;
+  height: 25px;
   background-color: #BDBDBD;
-  top: 50%;
-  left: 50%;
-  border-radius: 15px;
-  transform: translate(-50%, -50%) rotate(-45deg);
+  position: absolute;
+  border-radius: 25px;
 }
 
-.diagonal45 {
-  transform: translate(-50%, -50%) rotate(45deg);
+.x-line:first-child {
+  transform: rotate(45deg);
+}
+
+.x-line:last-child {
+  transform: rotate(-45deg);
 }
 
 .photo-perfil{
   border-radius: 50%;
 }
+
 .log-in-tittle{
   padding-top: 25px;
-}
+} 
 
-.x,.return_log_in{
+.return_log_in{
   position: relative;
   color: #ffffff00;
   background: none;
@@ -150,7 +153,6 @@ body{
   padding: 0, 15px, 0 15px;
 }
 
-
 .line_left, .line_right{
   background: #FFF;
   border-radius: 0px 0px 25px 25px;
@@ -202,6 +204,14 @@ dialog{
   outline: none;
 }
 
+.arriba_create_account{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  display: flex;
+  gap: 90px;
+}
+
 .sing-up{
   background: #FFF;
   padding-left: 25px;
@@ -244,14 +254,15 @@ dialog::backdrop{
 }
 
 #modal_password{
-  width: 64vh;
+  width: 75vh;
 }
 
-.arriba2{
+.arriba_password{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
   display: flex;
-  flex-wrap: wrap-reverse;
-  flex-direction: column-reverse;
-  align-items:last baseline;
+  gap: 10%;
 }
 
 .indicaciones_password{
@@ -278,16 +289,4 @@ dialog::backdrop{
   font-size: large;
   width: 50%;
   cursor: pointer;
-}
-
-.div1, .div2 {
-  height: 50vh; /* Establecemos una altura del 50% del viewport height (altura de la ventana del navegador) */
-}
-
-.div1 {
-  background-color: red;
-}
-
-.div2 {
-  background-color: green;
 }

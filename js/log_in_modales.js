@@ -1,4 +1,17 @@
+/* Parte de Julio Cesar Chan Manrique */
 // Formulario principal - log-in
+
+// Para regresar el menu (Boton x arreglado)
+return_menu.addEventListener("submit",(a)=>{
+    a.preventDefault();
+    direction_menu();
+});
+
+let direction_menu=()=>{
+    window.location="index.html";
+};
+
+/* Para el forms de log-in */
 let username=document.getElementById("username");
 let password=document.getElementById("password");
 
@@ -22,11 +35,25 @@ let verification =()=>{
 let modal_open_create_account=()=>{
     modal_sing_up.showModal();
 }
+
+// Boton X para salir de la ventana modal
+create_account_exit.addEventListener("submit",(a)=>{
+    a.preventDefault();
+    modal_close_create_account();
+});
+
 // form de la vantanda modal de crear cuenta
 let create_username=document.getElementById("create_username");
 let use_email=document.getElementById("use_email");
 let create_password=document.getElementById("create_password");
 
+// Boton X para salir de la ventana modal
+remember_password_exit.addEventListener("submit",(a)=>{
+    a.preventDefault();
+    modal_close_password();
+});
+
+// forms
 create_account.addEventListener("submit",(a)=>{
     a.preventDefault();
     verification_create_account();

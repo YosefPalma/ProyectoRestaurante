@@ -23,47 +23,55 @@
     </div>
 
     <!-- Inicia formulario -->
-        <form class="log-in" id="form_log_in">
-           <div class="arriba">
-                <h1 class="">Log-in</h1>
-                <div class="container-retroceder">
-                    <div class="retroceder">
-                        <span class="diagonal-45"></span>
-                        <a href="Index.html" class="x">x</a>
-                        <span class="diagonal45"></span>
-                    </div>
+    <div class="log-in">
+
+        <div class="arriba">
+            <h1 class="">Log-in</h1>
+            <!-- Nueva forma de los botones  X -->
+                <div class="container_retroceder">
+                    <form id="return_menu">
+                        <button class="retroceder" type="submit">
+                            <span class="x-line"></span>
+                            <span class="x-line"></span>
+                        </button>
+                    </form>
                 </div>
-           </div>
-
-           <div class="img-separador">
-                <img src="/ProyectoRestaurante/img/Photo_perfil.jpeg" class="photo-perfil">
-                <span class="separador"></span>
-           </div>    
-
-           <!-- Empieza input del form-Log-in -->
-            <div class="secciones">
-                <p class="text-info-input">Usuario</p>
-                <input type="text" class="input-login" id="username">
+            <!-- Aqui termina la parte del boton X -->
             </div>
 
-            <div class="secciones">
-                <p class="text-info-input">Contraseña</p>
-                <input type="password" class="input-login" id="password">
-            </div>
-
-            <div class="textos">
-                <p class="crear_cuenta">
-                    ¿Necesitas crear una cuenta?.<a href="#"  id="modal-open" class="create_acount" onclick="modal_open_create_account(this)" >Haz click aquí</a>
-                </p>
-    
-                <p class="crear_cuenta">
-                    ¿Olvidaste tu contraseña?Para recordarlo <a href="#"  class="remember_password" onclick="modal_open_remember_password(this)">Haz click aquí</a>
-                </p>
-
-                <button type="submit" class="button_login">Iniciar sesión</button>
-            </div>
-
-        </form>
+        <form id="form_log_in">
+ 
+            <div class="img-separador">
+                 <img src="/ProyectoRestaurante/img/Photo_perfil.jpeg" class="photo-perfil">
+                 <span class="separador"></span>
+            </div>    
+ 
+            <!-- Empieza input del form-Log-in -->
+             <div class="secciones">
+                 <p class="text-info-input">Usuario</p>
+                 <input type="text" class="input-login" id="username">
+             </div>
+ 
+             <div class="secciones">
+                 <p class="text-info-input">Contraseña</p>
+                 <input type="password" class="input-login" id="password">
+             </div>
+ 
+             <div class="textos">
+                 <p class="crear_cuenta">
+                     ¿Necesitas crear una cuenta?.<a href="#"  id="modal-open" class="create_acount" onclick="modal_open_create_account(this)" >Haz click aquí</a>
+                 </p>
+     
+                 <p class="crear_cuenta">
+                     ¿Olvidaste tu contraseña?Para recordarlo <a href="#"  class="remember_password" onclick="modal_open_remember_password(this)">Haz click aquí</a>
+                 </p>
+ 
+                 <button type="submit" class="button_login">Iniciar sesión</button>
+             </div>
+ 
+         </form>
+    </div>
+        
 
     <!-- Acaba formulario -->
     <div class="bg_lines">
@@ -77,18 +85,20 @@
      <!-- Ventana modal de crear cuenta -->
      <dialog id="modal_sing_up">
         <div class="sing-up">
-            <form id="create_account">
-                <div class="arriba">
-                    <h1 class="log-in-tittle">Crear cuenta</h1>
+            <div class="arriba_create_account">
+                <h1 class="sing-up-tittle">Crear cuenta</h1>
 
-                    <div class="container-retroceder">
-                        <div class="retroceder">
-                            <span class="diagonal-45"></span>
-                            <a href="#" id="modal-close" class="return_log_in" onclick="modal_close_create_account(this)">X</a>
-                            <span class="diagonal45"></span>
-                        </div>
-                    </div>
+                <div class="container_retroceder">
+                    <form id="create_account_exit">
+                        <button class="retroceder" type="submit">
+                            <span class="x-line"></span>
+                            <span class="x-line"></span>
+                        </button>
+                    </form>
                 </div>
+                
+            </div>
+            <form id="create_account">
 
                 <!-- Formulario para crear cuenta -->
                 <div class="secciones">
@@ -116,17 +126,20 @@
      <!-- Ventana modal para recordar contraseña -->
      <dialog id="modal_password">
         <div class="remember_password">
-            <form action="" id="recordar_contraseña">
-                <div class="arriba2">
-                    <h1 class="Forget-tittle">¿Olvidaste tu contraseña?</h1>
-                    <div class="container-retroceder">
-                        <div class="retroceder">
-                            <span class="diagonal-45"></span>
-                            <a href="#" class="return_log_in" onclick="modal_close_password(this)">X</a>
-                            <span class="diagonal45"></span>
-                        </div>
-                    </div>
+            <div class="arriba_password">
+                <h1 class="Forget-tittle">¿Olvidaste tu contraseña?</h1>
+
+                <div class="container_retroceder">
+                    <form id="remember_password_exit">
+                        <button class="retroceder" type="submit">
+                            <span class="x-line"></span>
+                            <span class="x-line"></span>
+                        </button>
+                    </form>
                 </div>
+
+            </div>
+            <form action="" id="recordar_contraseña">
                 <p class="indicaciones_password">Escribe tu correo electronico para ver tu contraseña</p>
                 <div class="form-div-password">
                     <input type="email" id="email" class="input-email-password">
@@ -134,7 +147,6 @@
                 </div>
 
                 <p class="see_password" id="see_password"></p>
-                <!-- Crear despues una función que muestre la contraseña -->
             </form>
         </div>
      </dialog>

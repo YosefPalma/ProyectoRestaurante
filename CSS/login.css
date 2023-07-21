@@ -279,3 +279,15 @@ dialog::backdrop{
   width: 50%;
   cursor: pointer;
 }
+
+.div1, .div2 {
+  height: 50vh; /* Establecemos una altura del 50% del viewport height (altura de la ventana del navegador) */
+}
+
+.div1 {
+  background-color: red;
+}
+
+.div2 {
+  background-color: green;
+}

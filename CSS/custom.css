@@ -12,6 +12,27 @@ body {
   background-image: url("../img/robot.png");
 }
 
+.cristalmorado {
+  background: rgba(86, 61, 124, 0.77);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(86, 61, 124, 0.3);
+}
+
+.square * {
+  width: 30vw;
+  aspect-ratio: 1;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
+.carrusel {
+  display: block;
+  float: left;
+}
+
 /*!
  * Bootstrap  v5.3.0 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors

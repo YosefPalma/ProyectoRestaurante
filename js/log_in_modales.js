@@ -28,7 +28,7 @@ let verification = () => {
     if (username.value === "" || password.value === "") {
         alert("¡No puedes dejar campos vacíos para iniciar sesión!.");
     } else {
-        // Retrieve the JSON object from localStorage
+        //Buscar atributos en el JSON
         const datosCuentaJSON = localStorage.getItem("datosCuenta");
         if (datosCuentaJSON) {
             const datosCuenta = JSON.parse(datosCuentaJSON);
@@ -139,8 +139,25 @@ let verification_password=()=>{
     if(emial.value === ""){
         alert("Por favor rellena el campo para que puedas ver tu contraseña");
     }else{
-        see_password.style.color="black";
-        see_password.innerHTML="Tu contraseña es: <br>Haz click en 'X' para dejar de ver";
+
+        const datosCuentaJSON = localStorage.getItem("datosCuenta");
+        if (datosCuentaJSON) {
+            const datosCuenta = JSON.parse(datosCuentaJSON);
+            const useEmailValue = datosCuenta.use_email;
+            const createPasswordValue = datosCuenta.create_password;
+
+            if (emial.value === useEmailValue) {
+                see_password.style.color="black";
+                see_password.innerHTML="Tu contraseña es: " + createPasswordValue +"<br>Haz click en 'X' para dejar de ver";
+                emial.value=""
+            } else {
+                emial.value=""
+                alert("El correo que porporcionaste no existe favor de ingresar el correcto");
+            }
+        } else {
+            emial.value=""
+            alert("No se encontraron datos de cuenta. Por favor, crea una cuenta primero.");
+        }
     }
 }
 

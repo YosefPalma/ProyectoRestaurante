@@ -166,8 +166,3 @@ let modal_close_password=()=>{
     modal_password.close();
     see_password.innerHTML="";
 }
-
-/****** Conversión de archivos JSON ************************/
-
-
-// localStorage.setItem("usernames",username) //<-- Ejemplo de como guardar los datos

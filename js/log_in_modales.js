@@ -15,6 +15,9 @@ let direction_menu=()=>{
 let username=document.getElementById("username");
 let password=document.getElementById("password");
 
+let usuario_default="Jul24";
+let contraseña_default="@Bbaurio204";
+
 // Validación del forms log-in (nada en blanco)
 form_log_in.addEventListener("submit", (a) =>{
     a.preventDefault();
@@ -22,10 +25,15 @@ form_log_in.addEventListener("submit", (a) =>{
 });
 
 let verification =()=>{
-    if(username.value==="" || password.value===""){
+    if(username.value=== "" || password.value===""){
         alert("¡No puedes dejar campos vacios para inciar sesión!.");
     }else{
-        window.location="index.html";
+        if(username.value=== usuario_default || password.value=== contraseña_default){
+            direction_menu();
+            username.value="";
+        }else{
+            alert("La contraseña o el nombre de usuario no es correcto");
+        }
     }
 }
 

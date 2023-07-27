@@ -24,18 +24,29 @@ form_log_in.addEventListener("submit", (a) =>{
     verification();     
 });
 
-let verification =()=>{
-    if(username.value=== "" || password.value===""){
-        alert("¡No puedes dejar campos vacios para inciar sesión!.");
-    }else{
-        if(username.value=== usuario_default || password.value=== contraseña_default){
-            direction_menu();
-            username.value="";
-        }else{
-            alert("La contraseña o el nombre de usuario no es correcto");
+let verification = () => {
+    if (username.value === "" || password.value === "") {
+        alert("¡No puedes dejar campos vacíos para iniciar sesión!.");
+    } else {
+        // Retrieve the JSON object from localStorage
+        const datosCuentaJSON = localStorage.getItem("datosCuenta");
+        if (datosCuentaJSON) {
+            const datosCuenta = JSON.parse(datosCuentaJSON);
+            const createUsernameValue = datosCuenta.create_username;
+            const createPasswordValue = datosCuenta.create_password;
+
+            if (username.value === createUsernameValue && password.value === createPasswordValue) {
+                direction_menu();
+                username.value = "";
+            } else {
+                alert("La contraseña o el nombre de usuario no es correcto");
+            }
+        } else {
+            alert("No se encontraron datos de cuenta. Por favor, crea una cuenta primero.");
         }
     }
-}
+};
+
 
 /* Ventana modal para crear cuentas */
 
@@ -62,15 +73,42 @@ remember_password_exit.addEventListener("submit",(a)=>{
 });
 
 // forms
+// Función para crear el JSON con los valores ingresados en el formulario de crear cuenta
+const crearJSON = () => {
+    const createUsernameValue = create_username.value;
+    const useEmailValue = use_email.value;
+    const createPasswordValue = create_password.value;
+  
+    // Crear un objeto con los valores obtenidos del formulario de crear cuenta
+    const datosCuenta = {
+      "create_username": createUsernameValue,
+      "use_email": useEmailValue,
+      "create_password": createPasswordValue
+    };
+  
+    // Convertir el objeto a JSON usando JSON.stringify()
+    const datosCuentaJSON = JSON.stringify(datosCuenta);
+    console.log(datosCuentaJSON)
+  
+    // Guardar el JSON en el localStorage
+    localStorage.setItem("datosCuenta", datosCuentaJSON);
+
+    create_username.value=""
+    use_email.value="";
+    create_password.value="";
+  };
+  
+
 create_account.addEventListener("submit",(a)=>{
     a.preventDefault();
     verification_create_account();
 });
 
-let verification_create_account=()=>{
+const verification_create_account=()=>{
     if(create_username.value === "" || use_email.value === "" || create_password.value === ""){
         alert("¡No puedes dejar campos vacios!.\nPor favor completa todos los campos para poder crear tu cuenta.");
     }else{
+        crearJSON();
         alert("¡Cuenta creada con exito! :)");
         modal_close_create_account();
     }
@@ -111,3 +149,8 @@ let modal_close_password=()=>{
     modal_password.close();
     see_password.innerHTML="";
 }
+
+/****** Conversión de archivos JSON ************************/
+
+
+// localStorage.setItem("usernames",username) //<-- Ejemplo de como guardar los datos

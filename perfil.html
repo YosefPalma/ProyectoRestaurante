@@ -12,6 +12,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <dvi class="photoperfil">
+        <img src="./img/Photo_perfil.jpeg" alt="photo_user_perfil" class="photo">
+    </dvi>
+
+    <div class="container_dates">
+
+        <h1>Tu cuenta</h1>
+        <p id="username">Usuario:</p>
+        <p id="password">Contraseña:</p>
+
+    </div>
+
+    <div class="container-button-form">
+        
+        <button id="edit_dates">Editar datos</button>
+
+        <form id="editor" class="hidden">
+
+            <div class="container_editor">
+                <p>Usuario</p>
+                <input type="text" name="" id="edit_username">
+            </div>
+
+            <div class="container_editor">
+                <p>Password:</p>
+                <input type="text" name="" id="edit_password">
+            </div>
+
+            <div class="buttons_options_edit">
+                <button>Guardar</button>
+                <button>Cancelar</button>
+            </div>
+
+        </form>
+
+    </div>
+
     <script src="./js/perfil.js"></script>
 </body>
 </html>

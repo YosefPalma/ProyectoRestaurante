@@ -3,3 +3,7 @@
     font-family: 'Poppins', sans-serif;
     color: #000;
 }
+/* Agregamos una clase para ocultar el formulario inicialmente */
+.hidden {
+  display: none;
+} 

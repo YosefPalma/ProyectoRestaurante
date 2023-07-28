@@ -20,47 +20,47 @@
     </dvi>
 
     <div class="container_dates">
-
-        <div class="arriba">
-            <h1>Tu cuenta:</h1>
-            <div class="container_retroceder">
-                <form id="return_menu">
-                    <button class="retroceder" type="submit">
-                        <span class="x-line"></span>
-                        <span class="x-line"></span>
-                    </button>
+        <div class="container_form">
+            <div class="arriba">
+                <h1>Mi cuenta:</h1>
+                <div class="container_retroceder">
+                    <form id="return_menu">
+                        <button class="retroceder" type="submit">
+                            <span class="x-line"></span>
+                            <span class="x-line"></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+    
+            <p id="username">Usuario:</p>
+            <p id="password">Contraseña:</p>
+    
+            <div class="container-button-form">
+            
+                <button id="edit_dates">Editar datos</button>
+        
+                <form id="editor" class="hidden">
+        
+                    <div class="container_editor">
+                        <p>Usuario</p>
+                        <input type="text" name="" id="edit_username">
+                    </div>
+        
+                    <div class="container_editor">
+                        <p>Password:</p>
+                        <input type="text" name="" id="edit_password">
+                    </div>
+        
+                    <div class="buttons_options_edit">
+                        <button id="save_changes">Guardar</button>
+                        <button id="cancel_changes">Cancelar</button>
+                    </div>
+        
                 </form>
+        
             </div>
         </div>
-
-        <p id="username">Usuario:</p>
-        <p id="password">Contraseña:</p>
-
-        <div class="container-button-form">
-        
-            <button id="edit_dates">Editar datos</button>
-    
-            <form id="editor" class="hidden">
-    
-                <div class="container_editor">
-                    <p>Usuario</p>
-                    <input type="text" name="" id="edit_username">
-                </div>
-    
-                <div class="container_editor">
-                    <p>Password:</p>
-                    <input type="text" name="" id="edit_password">
-                </div>
-    
-                <div class="buttons_options_edit">
-                    <button id="save_changes">Guardar</button>
-                    <button id="cancel_changes">Cancelar</button>
-                </div>
-    
-            </form>
-    
-        </div>
-
     </div>
 
     <script src="./js/perfil.js"></script>

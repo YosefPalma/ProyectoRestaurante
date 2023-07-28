@@ -9,6 +9,7 @@
 }
 
 body {
+  background-color: black !important;
   background-image: url("../img/robot.png");
 }
 
@@ -32,6 +33,10 @@ body {
 
 .carousel-item > img {
   height: 25vh;
+}
+
+.card img {
+  aspect-ratio: 1;
 }
 
 #carrusel {

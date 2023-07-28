@@ -49,15 +49,16 @@
                     </div>
                 </li>
             </ul>
-            <form class="d-flex my-2 my-lg-0">
-                <input class="form-control me-sm-2" type="text" placeholder="...">
+            <!-- Form -->
+            <form class="d-flex my-2 my-lg-0" id="searchPics">
+                <input id="formInput" class="form-control me-sm-2" type="text" placeholder="...">
                 <button class="btn btn-outline-success bg-yellow my-2 my-sm-0 text-black" type="submit">Buscar</button>
             </form>
         </div>
     </nav>
 
     <!-- Main Container -->
-    <div class="container-sm border border-dark rounded text-center text-white mt-3 p-3 cristalmorado">
+    <div class="container-sm border border-dark rounded text-center text-white mt-3 p-3 cristalmorado border-3 border-white">
         <div class="mb-5">
             <h2>!Bienvenido a RenderBay!</h2>
             <small>Imprimiendo comunidades</small>
@@ -91,20 +92,20 @@
             </button>
         </div>
         <!-- ¿No logeado? -->
-        <div>
+        <div id="logincheck">
             <h3>Al parecer aún no inicias sesión</h3>
             <div class="">
-                <a name="" id="" class="btn bg-yellow" href="./login.html" role="button">Inicia sesión/Registrate</a>
+                <a name="" id="loginbutton" class="btn bg-yellow" href="./login.html" role="button">Inicia sesión/Registrate</a>
                 <p><b> ¡O Explora nuestro catálogo!</b></p>
             </div>
         </div>
 
         <!-- Catalogo -->
-        <div class="row">
+        <div class="row pb-3">
             <div class="col-4">
                 <div class="card">
                     <div class="card-body">
-                        <img src="./img/RenderBay_Logo_Morado_Boostrap.png" alt="" height="50%">
+                        <img  class="rounded" src="./img/RenderBay_Logo_Morado_Boostrap.png" alt="" height="50%">
                         <h3 class="card-title">Title1</h3>
                         <p class="card-text">Text1</p>
                     </div>
@@ -113,7 +114,7 @@
             <div class="col-4">
                 <div class="card">
                     <div class="card-body">
-                        <img src="./img/RenderBay_Logo_Morado_Boostrap.png" alt="" height="50%">
+                        <img class="rounded" src="./img/RenderBay_Logo_Morado_Boostrap.png" alt="" height="50%">
                         <h3 class="card-title">Title2</h3>
                         <p class="card-text">Text2</p>
                     </div>
@@ -122,18 +123,18 @@
             <div class="col-4">
                 <div class="card">
                     <div class="card-body">
-                        <img src="./img/RenderBay_Logo_Morado_Boostrap.png" alt="" height="50%">
+                        <img class="rounded" src="./img/RenderBay_Logo_Morado_Boostrap.png" alt="" height="50%">
                         <h3 class="card-title">Title3</h3>
                         <p class="card-text">Text3</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row pb-3">
             <div class="col-4">
                 <div class="card">
                     <div class="card-body">
-                        <img src="./img/RenderBay_Logo_Morado_Boostrap.png" alt="" height="50%">
+                        <img class="rounded" src="./img/RenderBay_Logo_Morado_Boostrap.png" alt="" height="50%">
                         <h3 class="card-title">Title4</h3>
                         <p class="card-text">Text4</p>
                     </div>
@@ -142,7 +143,7 @@
             <div class="col-4">
                 <div class="card">
                     <div class="card-body">
-                        <img src="./img/RenderBay_Logo_Morado_Boostrap.png" alt="" height="50%">
+                        <img class="rounded" src="./img/RenderBay_Logo_Morado_Boostrap.png" alt="" height="50%">
                         <h3 class="card-title">Title5</h3>
                         <p class="card-text">Text5</p>
                     </div>
@@ -151,7 +152,7 @@
             <div class="col-4">
                 <div class="card">
                     <div class="card-body">
-                        <img src="./img/RenderBay_Logo_Morado_Boostrap.png" alt="" height="50%">
+                        <img class="rounded" src="./img/RenderBay_Logo_Morado_Boostrap.png" alt="" height="50%">
                         <h3 class="card-title">Title6</h3>
                         <p class="card-text">Text6</p>
                     </div>
@@ -162,7 +163,7 @@
             <div class="col-4">
                 <div class="card">
                     <div class="card-body">
-                        <img src="./img/RenderBay_Logo_Morado_Boostrap.png" alt="" height="50%">
+                        <img class="rounded" src="./img/RenderBay_Logo_Morado_Boostrap.png" alt="" height="50%">
                         <h3 class="card-title">Title7</h3>
                         <p class="card-text">Text7</p>
                     </div>
@@ -171,7 +172,7 @@
             <div class="col-4">
                 <div class="card">
                     <div class="card-body">
-                        <img src="./img/RenderBay_Logo_Morado_Boostrap.png" alt="" height="50%">
+                        <img class="rounded" src="./img/RenderBay_Logo_Morado_Boostrap.png" alt="" height="50%">
                         <h3 class="card-title">Title8</h3>
                         <p class="card-text">Text8</p>
                     </div>
@@ -180,7 +181,7 @@
             <div class="col-4">
                 <div class="card">
                     <div class="card-body">
-                        <img src="./img/RenderBay_Logo_Morado_Boostrap.png" alt="" height="50%">
+                        <img class="rounded" src="./img/RenderBay_Logo_Morado_Boostrap.png" alt="" height="50%">
                         <h3 class="card-title">Title9</h3>
                         <p class="card-text">Text9</p>
                     </div>
@@ -200,8 +201,10 @@
     var testvar = "";
     var API_KEY = '30373580-7c0a0ee88c44cbcbc4936bf81';
     var URL = "https://pixabay.com/api/?key=" + API_KEY + "&q=" + encodeURIComponent('3D Prints');
+    var something = "";
 
     $(document).ready(usoApi());
+    $(document).ready(checkLogin());
 
     function usoApi() {
         $.getJSON(URL, function (data) {
@@ -215,6 +218,20 @@
                 console.log('No hits');
         })
     };
+    function checkLogin(){
+        if(localStorage.datosCuenta){
+            let loginname = document.getElementById("logincheck").querySelector("h3");
+            loginname.innerHTML = "Bienvenido, " + JSON.parse(localStorage.datosCuenta).create_username;
+            document.getElementById("loginbutton").style.visibility = "hidden";
+            document.getElementById("logincheck").querySelector("p").innerHTML = "<b>¡Explora los diseños más recientes</b>";
+        }
+    }
+
+    searchPics.addEventListener("submit",(a)=>{
+        a.preventDefault();
+        URL = "https://pixabay.com/api/?key=" + API_KEY + "&q=" + encodeURIComponent(document.getElementById("formInput").value);
+        usoApi();
+    });
 
     function ChangePictures(a) {
         elcarrusel = Array.from(document.getElementById("innerimg").querySelectorAll("img"));

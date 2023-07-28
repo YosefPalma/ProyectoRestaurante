@@ -6,6 +6,7 @@
     font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 }
 body{
+    background-color: black !important;
     background-image: url("../img/robot.png");
 }
 
@@ -28,7 +29,9 @@ body{
     height: 25vh;
 
 }
-
+.card img{
+    aspect-ratio: 1;
+}
 #carrusel{
     height: 30vh;
     

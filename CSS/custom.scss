@@ -8,23 +8,30 @@
 body{
     background-image: url("../img/robot.png");
 }
+
+.bg-yellow{
+    background-color: #e6b400 !important;
+}
 .cristalmorado{
 
-    background: rgba(86, 61, 124, 0.77);
+    background: #0f0e0e;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(86, 61, 124, 0.3);
 }
-.square  * {
-    width: 30vw;
-    aspect-ratio: 1;
-    object-fit:scale-down;
+#innerimg{
+    object-fit: cover;
+}
+.carousel-item > img{
+    height: 25vh;
+
+}
+
+#carrusel{
+    height: 30vh;
     
 }
-.carrusel{
-    display: block;
-    float: left;
-}
+
 @import "../node_modules/bootstrap/scss/bootstrap.scss";

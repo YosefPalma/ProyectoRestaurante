@@ -12,8 +12,12 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark shadow-lg navbar p-3" style="background-color: #563d7c">
-        <a class="navbar-brand" href="#">RenderBay</a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark shadow-lg navbar p-1" style="background-color: #050505">
+        <a class="navbar-brand" href="#">
+            <img src="./img/RenderBay_White_nobg.png" alt="" height="50px">
+            RenderBay
+        </a>
         <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
             aria-expanded="false" aria-label="Toggle navigation"></button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
@@ -22,8 +26,12 @@
                     <a class="nav-link active" href="#" aria-current="page">Inicio<span class="visually-hidden">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Explorar</a>
+                    <a class="nav-link" href="./creadores.html">Explorar</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contáctanos</a>
+                </li>
+
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
                     <div class="dropdown-menu" aria-labelledby="dropdownId">
@@ -34,31 +42,33 @@
             </ul>
             <form class="d-flex my-2 my-lg-0">
                 <input class="form-control me-sm-2" type="text" placeholder="...">
-                <button class="btn btn-outline-success bg-danger my-2 my-sm-0 text-black" type="submit">Buscar</button>
+                <button class="btn btn-outline-success bg-yellow my-2 my-sm-0 text-black" type="submit">Buscar</button>
             </form>
         </div>
     </nav>
 
-
-    <div class="container-sm border border-dark rounded text-center text-white mt-3 p-3 cristalmorado">
-        <h3>!Bienvenido a RenderBay!</h3>
-        <small >Imprimiendo comunidades</small>
-
-        <div id="carrusel" class="carousel slide" data-bs-ride="carousel">
+    <!-- Main Container -->
+    <div class="container-sm border border-dark rounded text-center text-white mt-3 p-3 cristalmorado vh-100">
+        <div class="mb-5">
+            <h2>!Bienvenido a RenderBay!</h2>
+            <small>Imprimiendo comunidades</small>
+        </div>
+        <!-- Carrusel -->
+        <div id="carrusel" class="carousel slide " data-bs-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-bs-target="#carrusel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
                 <li data-bs-target="#carrusel" data-bs-slide-to="1" aria-label="Second slide"></li>
                 <li data-bs-target="#carrusel" data-bs-slide-to="2" aria-label="Third slide"></li>
             </ol>
             <div class="carousel-inner" id="innerimg" role="listbox">
-                <div class="carousel-item active square">
-                    <img src="./img/robot.png" class="w-100 d-block" alt="First slide">
+                <div class="carousel-item active">
+                    <img src="./img/robot.png" class="" alt="First slide">
                 </div>
-                <div class="carousel-item square">
-                    <img src="./img/robot.png" class="w-100 d-block" alt="Second slide">
+                <div class="carousel-item">
+                    <img src="./img/robot.png" class="" alt="Second slide">
                 </div>
-                <div class="carousel-item square">
-                    <img src="./img/robot.png" class="w-100 d-block" alt="Third slide">
+                <div class="carousel-item">
+                    <img src="./img/robot.png" class="" alt="Third slide">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
@@ -70,13 +80,26 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
+        <!-- ¿No logeado? -->
+        <div>
+            <h3>Al parecer aún no inicias sesión</h3>
+            <div class="">
+                <a name="" id="" class="btn bg-yellow" href="./login.html" role="button">Inicia sesión/Registrate</a>
+                <p><b> ¡O Explora nuestro catálogo!</b></p>
+            </div>
+        </div>
     </div>
 </body>
+
+
+
+
+
 
 <script defer>
     var testvar = "";
     var API_KEY = '30373580-7c0a0ee88c44cbcbc4936bf81';
-    var URL = "https://pixabay.com/api/?key="+API_KEY+"&q="+encodeURIComponent('3D Printed toys');
+    var URL = "https://pixabay.com/api/?key="+API_KEY+"&q="+encodeURIComponent('Guitars');
     
     $(document).ready(usoApi());
 

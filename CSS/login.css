@@ -132,7 +132,7 @@ body{
 .button_login,.button_sing_up{
   padding-left: 25px;
   padding-right: 25px;
-  color: #000;
+  color: #FFF;
   font-weight: bolder;
   font-size: large;
   background: hsl(47, 100%, 49%);

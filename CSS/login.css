@@ -66,10 +66,6 @@ body{
   transform: rotate(-45deg);
 }
 
-.photo-perfil{
-  border-radius: 50%;
-}
-
 .log-in-tittle{
   padding-top: 25px;
 } 
@@ -99,11 +95,12 @@ body{
     border: 2px solid #BDBDBD;
 }
 
-.photo-perfil{
+.logo{
   width: 202px;
   height: 202px;
   box-shadow: 0px 15px 80px rgba(0, 0, 0, 0.50);
   border:8px solid #3E2C59;
+  border-radius: 24%;
 }
 
 /********** Forms de log in **********/

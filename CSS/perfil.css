@@ -6,9 +6,9 @@
 
 body{
   width: 100%;
+  height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 100vh;
   background-color: hsl(0, 0%, 20%);
   position: fixed;
   margin-top: 0;
@@ -17,10 +17,18 @@ body{
 .photoperfil{
   display: grid;
   place-items: center;
-}                                                                                                                                                                                                                                                                                                           
+}           
+
+.contenido_photo{
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
 
 .contenido_photo h2{
   background: hsl(0, 0%, 44%);
+  padding-left: 20px;
+  padding-right: 20px;
   border-radius: 25px;
   text-align: center;
   color: #fff;
@@ -41,23 +49,16 @@ body{
 
 .container_form{
   margin-top: 25px;
-  margin-left: 25px;
+  margin-left: 50px;
 }
 
 .arriba{
 
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 50px;
-}
-
-#username, #password{
-  width: 75%;
-  background: #D9D9D9;
-  border-radius: 6px;
-  padding-left: 10px;
 }
 /****** Retroceder*****/
 .container_retroceder{
@@ -94,7 +95,97 @@ body{
   transform: rotate(-45deg);
 }
 
-/* Agregamos una clase para ocultar el formulario inicialmente */
+.contenido{
+  display: grid;
+  place-items: center;
+}
+
+.contenido h1{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#username, #password{
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #D9D9D9;
+  border-radius: 6px;
+  text-align: center;
+  margin-top: 0;
+}
+
+.separador{
+  width: 90%;
+  border: 2px solid #BDBDBD;
+  display: grid;
+  place-items: center;
+}
+
+/*  Edito para modificar datos de la cuenta */
+.container-button-form{
+  width: 90%;
+  display: grid;
+  place-items: center;
+}
+
+.container-button-form p{
+  text-align: center;
+}
+
+#edit_dates{
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #FFF;
+  font-weight: bolder;
+  font-size: large;
+  background: hsl(47, 100%, 49%);
+  border: 5px solid hsl(47, 100%, 49%);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
 .hidden {
-  display: none;
+  display: none; /*Solo asi las opciones se van a ocultar*/
+}
+
+.container_editor{
+  display: flex;
+  flex-direction: column;
+}
+
+.container_editor p{
+  color: #FFF;
+  background-color: #000;
+  border-radius: 12px;
+}
+
+#edit_username, #edit_password{
+  background-color: #D9D9D9;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  text-indent: 5px;
+}
+
+.buttons_options_edit{
+  margin-top: 25px;
+  display: flex;
+  gap: 16px;
+}
+
+#save_changes, #cancel_changes{
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #FFF;
+  font-weight: bolder;
+  font-size: large;
+  background: hsl(47, 100%, 49%);
+  border: 5px solid hsl(47, 100%, 49%);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#cancel_changes{
+  background-color: #000;
+  border: #000;
 }

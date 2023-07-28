@@ -12,17 +12,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <dvi class="photoperfil">
+    <div class="photoperfil">
         <div class="contenido_photo">
             <h2>Foto  de perfil</h2>
             <img src="./img/Photo_perfil.jpg" alt="photo_user_perfil" class="photo">
         </div>
-    </dvi>
+    </div>
 
     <div class="container_dates">
         <div class="container_form">
             <div class="arriba">
-                <h1>Mi cuenta:</h1>
+                <img src="./img/RenderBay_Black_nobg.png" alt="" sizes="" srcset="">
                 <div class="container_retroceder">
                     <form id="return_menu">
                         <button class="retroceder" type="submit">
@@ -32,21 +32,31 @@
                     </form>
                 </div>
             </div>
+
+            <span class="separador"></span>
+
+            <div class="contenido">
+                <h1>Mi cuenta</h1>
     
-            <p id="username">Usuario:</p>
-            <p id="password">Contraseña:</p>
-    
-            <div class="container-button-form">
+                <p id="username"></p>
+
+                <p id="password"></p>
+            </div>
             
+            <span class="separador"></span>
+
+            <div class="container-button-form">
+                
+                <p>Click en el boton para editar los datos de la cuenta</p>
                 <button id="edit_dates">Editar datos</button>
         
                 <form id="editor" class="hidden">
-        
+
                     <div class="container_editor">
                         <p>Usuario</p>
                         <input type="text" name="" id="edit_username">
                     </div>
-        
+
                     <div class="container_editor">
                         <p>Password:</p>
                         <input type="text" name="" id="edit_password">
@@ -56,9 +66,7 @@
                         <button id="save_changes">Guardar</button>
                         <button id="cancel_changes">Cancelar</button>
                     </div>
-        
                 </form>
-        
             </div>
         </div>
     </div>

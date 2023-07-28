@@ -6,4 +6,41 @@
 /* Agregamos una clase para ocultar el formulario inicialmente */
 .hidden {
   display: none;
-} 
+}
+
+
+
+/****** Retroceder*****/
+.container_retroceder{
+  border-radius: 15px;
+}
+
+.retroceder {
+  border: 5px solid #BDBDBD;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  position: relative;
+}
+
+.x-line {
+  width: 6px;
+  height: 25px;
+  background-color: #BDBDBD;
+  position: absolute;
+  border-radius: 25px;
+}
+
+.x-line:first-child {
+  transform: rotate(45deg);
+}
+
+.x-line:last-child {
+  transform: rotate(-45deg);
+}

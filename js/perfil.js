@@ -1,6 +1,15 @@
 // Parte de Julio Cesar Chan Manrique
-// No es necesario: var valor = localStorage.getItem("usernames");
-// document.write(valor);
+
+// Para regresar al menu
+return_menu.addEventListener("submit",(a)=>{
+  a.preventDefault();
+  direction_menu();
+});
+
+let direction_menu=()=>{
+  window.location="index.html";
+};
+
 
 // Para el editor de datos
 const button = document.getElementById("edit_dates");

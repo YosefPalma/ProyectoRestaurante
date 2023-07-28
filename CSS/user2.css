@@ -571,6 +571,7 @@
     font-size: var(--fs-4);
     margin-bottom: 25px;
   }
+
   
   .social-list {
     display: flex;
@@ -589,6 +590,17 @@
   }
   
   .social-link:hover { color: var(--golden-puppy); }
+  
+  .social-link2 {
+    background: var(--eerie-black-1);
+    color: var(--quick-silver);
+    padding: 100px;
+    font-size: 100px;
+    border-radius: 50%;
+    transition: var(--transition);
+  }
+  
+  .social-link2:hover { color: var(--golden-puppy); }
   
   .footer-link-box {
     display: grid;

@@ -13,40 +13,56 @@
 </head>
 <body>
     <dvi class="photoperfil">
+
         <img src="./img/Photo_perfil.jpg" alt="photo_user_perfil" class="photo">
+        <div class="contenido_photo">
+            <h2>Foto  de perfil</h2>
+            <img src="./img/Photo_perfil.jpg" alt="photo_user_perfil" class="photo">
+        </div>
     </dvi>
 
     <div class="container_dates">
-
-        <h1>Tu cuenta</h1>
-        <p id="username">Usuario:</p>
-        <p id="password">Contraseña:</p>
-
-    </div>
-
-    <div class="container-button-form">
+        <div class="container_form">
+            <div class="arriba">
+                <h1>Mi cuenta:</h1>
+                <div class="container_retroceder">
+                    <form id="return_menu">
+                        <button class="retroceder" type="submit">
+                            <span class="x-line"></span>
+                            <span class="x-line"></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+    
+            <p id="username">Usuario:</p>
+            <p id="password">Contraseña:</p>
+    
+            <div class="container-button-form">
+            
+                <button id="edit_dates">Editar datos</button>
         
-        <button id="edit_dates">Editar datos</button>
-
-        <form id="editor" class="hidden">
-
-            <div class="container_editor">
-                <p>Usuario</p>
-                <input type="text" name="" id="edit_username">
+                <form id="editor" class="hidden">
+        
+                    <div class="container_editor">
+                        <p>Usuario</p>
+                        <input type="text" name="" id="edit_username">
+                    </div>
+        
+                    <div class="container_editor">
+                        <p>Password:</p>
+                        <input type="text" name="" id="edit_password">
+                    </div>
+        
+                    <div class="buttons_options_edit">
+                        <button id="save_changes">Guardar</button>
+                        <button id="cancel_changes">Cancelar</button>
+                    </div>
+        
+                </form>
+        
             </div>
-
-            <div class="container_editor">
-                <p>Password:</p>
-                <input type="text" name="" id="edit_password">
-            </div>
-
-            <div class="buttons_options_edit">
-                <button id="save_changes">Guardar</button>
-                <button id="cancel_changes">Cancelar</button>
-            </div>
-
-        </form>
-
+        </div>
     </div>
 
     <script src="./js/perfil.js"></script>

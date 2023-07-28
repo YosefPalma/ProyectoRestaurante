@@ -3,12 +3,39 @@
     font-family: 'Poppins', sans-serif;
     color: #000;
 }
+
+body{
+  background-color: hsl(0, 0%, 20%);
+  width: 100vh;
+  height: 100vh;
+  position: fixed;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.photoperfil{
+  display: grid;
+  place-items: center;
+}
+
+.contenido_photo h2{
+  background: hsl(0, 0%, 44%);
+  border-radius: 25px;
+  text-align: center;
+  color: #fff;
+}
+
+.photo{
+  width: 202px;
+  height: 202px;
+  border-radius: 50%;
+  border: 8px solid hsl(47, 100%, 49%);
+}
+
 /* Agregamos una clase para ocultar el formulario inicialmente */
 .hidden {
   display: none;
 }
-
-
 
 /****** Retroceder*****/
 .container_retroceder{

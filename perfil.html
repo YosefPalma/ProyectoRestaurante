@@ -13,8 +13,10 @@
 </head>
 <body>
     <dvi class="photoperfil">
-        <h2>Foto  de perfil</h2>
-        <img src="./img/Photo_perfil.jpg" alt="photo_user_perfil" class="photo">
+        <div class="contenido_photo">
+            <h2>Foto  de perfil</h2>
+            <img src="./img/Photo_perfil.jpg" alt="photo_user_perfil" class="photo">
+        </div>
     </dvi>
 
     <div class="container_dates">
@@ -34,30 +36,30 @@
         <p id="username">Usuario:</p>
         <p id="password">Contraseña:</p>
 
-    </div>
-
-    <div class="container-button-form">
+        <div class="container-button-form">
         
-        <button id="edit_dates">Editar datos</button>
-
-        <form id="editor" class="hidden">
-
-            <div class="container_editor">
-                <p>Usuario</p>
-                <input type="text" name="" id="edit_username">
-            </div>
-
-            <div class="container_editor">
-                <p>Password:</p>
-                <input type="text" name="" id="edit_password">
-            </div>
-
-            <div class="buttons_options_edit">
-                <button id="save_changes">Guardar</button>
-                <button id="cancel_changes">Cancelar</button>
-            </div>
-
-        </form>
+            <button id="edit_dates">Editar datos</button>
+    
+            <form id="editor" class="hidden">
+    
+                <div class="container_editor">
+                    <p>Usuario</p>
+                    <input type="text" name="" id="edit_username">
+                </div>
+    
+                <div class="container_editor">
+                    <p>Password:</p>
+                    <input type="text" name="" id="edit_password">
+                </div>
+    
+                <div class="buttons_options_edit">
+                    <button id="save_changes">Guardar</button>
+                    <button id="cancel_changes">Cancelar</button>
+                </div>
+    
+            </form>
+    
+        </div>
 
     </div>
 
